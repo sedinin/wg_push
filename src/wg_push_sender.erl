@@ -11,7 +11,7 @@
 -record(state, {
         apns_host :: string(),
         apns_port :: integer(),
-        connections = orddict:new() :: {file:name_all(), port()}
+        connections = orddict:new() :: orddict:orddict(file:name_all(), port())
          }).
 
 
